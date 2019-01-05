@@ -17,12 +17,12 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url: 
-      defaultZone: http://eureka7001.com:7001/eureka/
+      defaultZone: http://eureka7001.com:7001/eureka
 ---
 server: 
   port: 7001
 spring: 
-  profiles: dev
+  profiles: test
   application: 
     name: microservicecloud-config-eureka-client
 
@@ -33,5 +33,4 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url: 
-      defaultZone: http://eureka7001.com:7001/eureka/
----
+      defaultZone: http://eureka7001.com:7001/eureka
